@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Quest Keeper AI - AI-Powered RPG Companion with Visual Game Engine
-    </title>
+    <title>Quest Keeper AI - A tabletop adventure that remembers</title>
     <meta
       name="description"
-      content="The first AI-powered tabletop RPG platform combining an AI Dungeon Master with 3D battlemap visualization, procedural world generation, and complete game state management."
+      content="A one-player tabletop adventure with a conversational Dungeon Master and rules-backed persistent campaign state."
     />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="styles.css" />
@@ -38,26 +36,24 @@
         <div class="hero-content">
           <div class="terminal-prompt">root@questkeeper:~$</div>
           <h1>&gt; QUEST_KEEPER_AI</h1>
-          <p class="tagline">[ AI_DUNGEON_MASTER + VISUAL_GAME_ENGINE ]</p>
+          <p class="tagline">[ AI_DUNGEON_MASTER + PERSISTENT_CAMPAIGN ]</p>
           <p class="description">
-            A desktop RPG companion combining an AI Dungeon Master with 3D
-            battlemap visualization, procedural world generation, and complete
-            game state management. Where every action has mechanical weight,
-            every quest tracks progress, and your world persists across
-            sessions.
+            A one-player tabletop adventure where you speak naturally, the
+            Dungeon Master responds, and the rules engine keeps characters,
+            inventory, quests, and consequences consistent across sessions.
           </p>
           <div class="hero-stats">
             <div class="stat">
-              <div class="stat-number">135+</div>
-              <div class="stat-label">MCP Tools</div>
+              <div class="stat-number">LIVE</div>
+              <div class="stat-label">Browser Table</div>
             </div>
             <div class="stat">
-              <div class="stat-number">3D</div>
-              <div class="stat-label">Battlemap</div>
+              <div class="stat-number">RULES</div>
+              <div class="stat-label">Backed Play</div>
             </div>
             <div class="stat">
-              <div class="stat-number">ALPHA</div>
-              <div class="stat-label">Playable Now</div>
+              <div class="stat-number">FREE</div>
+              <div class="stat-label">To Start</div>
             </div>
           </div>
           <div
@@ -70,32 +66,16 @@
             "
           >
             <p style="margin-bottom: 10px">
-              <strong>🖥️ Desktop App:</strong> Full Tauri application with React
-              frontend &amp; Three.js 3D rendering
+              <strong>🌐 Player table:</strong> Start in the browser with a
+              readable campaign log and persistent account state
             </p>
             <p>
-              <strong>🎮 MCP Backend:</strong> Compatible with
-              <a
-                href="https://claude.ai/download"
-                target="_blank"
-                style="color: var(--primary)"
-                >Claude Desktop</a
-              >,
-              <a
-                href="https://kilocode.ai"
-                target="_blank"
-                style="color: var(--primary)"
-                >KiloCode</a
-              >, and
-              <a
-                href="https://roocode.com"
-                target="_blank"
-                style="color: var(--primary)"
-                >RooCode</a
-              >
+              <strong>🎮 Rules engine:</strong> The open RPG MCP backend keeps
+              state authoritative while the DM handles the fiction. Explore
+              the engine and its tools on GitHub.
             </p>
           </div>
-          <a href="/quickstart" class="cta-button">&gt; GET_STARTED</a>
+          <a href="https://play.questkeeperai.com/" class="cta-button">&gt; PLAY_NOW</a>
           <a
             href="https://play.questkeeperai.com"
             target="_blank"
@@ -107,7 +87,7 @@
             href="https://github.com/Mnehmos/rpg-mcp"
             target="_blank"
             class="cta-button secondary"
-            >&gt; VIEW_BACKEND</a
+            >&gt; VIEW_RPG_MCP</a
           >
         </div>
       </section>
@@ -119,19 +99,20 @@
             <div style="font-family: 'Share Tech Mono', monospace; color: #00ffff; letter-spacing: 2px; margin-bottom: 1rem;">// LATEST_CASE_STUDY</div>
             <h2 style="font-size: 3rem; margin-bottom: 1rem; background: linear-gradient(90deg, #fff, #a9b1d6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">THE GHOST IN THE MACHINE</h2>
             <p style="color: #a9b1d6; font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;">
-              See what happens when an AI Game Master runs a full D&D session with <strong>zero hallucination</strong>. 
-              Witness the system fix its own code mid-session, bankrupt a player with real dice rolls, and kill a major NPC without mercy.
+              Read a real session log and see how a conversational DM turns a
+              player’s choices into rules-backed campaign moments. The engine
+              records what changed; the DM gives those changes a voice.
             </p>
             <div style="display: flex; gap: 1rem;">
               <a href="/showcase" class="cta-button" style="background: rgba(0, 255, 255, 0.1); border: 1px solid #00ffff; color: #00ffff; text-decoration: none; padding: 0.75rem 1.5rem; font-family: 'Share Tech Mono', monospace;">&gt; READ_THE_LOGS</a>
             </div>
           </div>
           <div class="promo-visual" style="background: rgba(0,0,0,0.5); border: 1px solid #333; padding: 2rem; border-radius: 4px; font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; opacity: 0.8;">
-            <div style="color: #6b7280; border-bottom: 1px solid #333; margin-bottom: 1rem; padding-bottom: 0.5rem;">COMBAT_LOG_EXTRACT</div>
-            <div style="color: #ff5555; margin-bottom: 0.5rem;">&gt; ROLL: NATURAL 20 (CRITICAL)</div>
-            <div style="color: #a9b1d6; margin-bottom: 0.5rem;">&gt; DAMAGE: 17 POINTS</div>
-            <div style="color: #ff5555; margin-bottom: 0.5rem;">&gt; STATUS: CASSIA_NEREIA [DEAD]</div>
-            <div style="color: #50fa7b; margin-top: 1rem;">&gt; SYSTEM: STATE_PERSISTED_TO_DB</div>
+            <div style="color: #6b7280; border-bottom: 1px solid #333; margin-bottom: 1rem; padding-bottom: 0.5rem;">SESSION_LOG_EXTRACT</div>
+            <div style="color: #00ffff; margin-bottom: 0.5rem;">&gt; ACTION: PLAYER DESCRIBES A MOVE</div>
+            <div style="color: #a9b1d6; margin-bottom: 0.5rem;">&gt; DM: THE SCENE RESPONDS</div>
+            <div style="color: #ffb000; margin-bottom: 0.5rem;">&gt; ENGINE: RULES CHECK COMMITTED</div>
+            <div style="color: #50fa7b; margin-top: 1rem;">&gt; STATE: CAMPAIGN RECORD UPDATED</div>
           </div>
         </div>
       </section>
@@ -204,19 +185,19 @@
             </p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">🗺️</div>
-            <h3>3D Battlemap</h3>
+            <div class="feature-icon">🗣️</div>
+            <h3>Conversational DM</h3>
             <p>
-              React Three Fiber visualization with tactical grid, terrain
-              features, and creature tokens with size categories
+              Describe what your character does in plain language and let the
+              Dungeon Master carry the scene forward
             </p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">🌍</div>
-            <h3>Procedural Worlds</h3>
+            <div class="feature-icon">💾</div>
+            <h3>Persistent Campaign</h3>
             <p>
-              Perlin noise terrain generation with biomes, regions, structures,
-              and points of interest
+              Campaign, character, inventory, quest, and relationship state
+              survives the session and remains available when you return
             </p>
           </div>
           <div class="feature-card">
@@ -236,27 +217,27 @@
             </p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">💾</div>
-            <h3>Persistent World</h3>
+            <div class="feature-icon">🧭</div>
+            <h3>Readable Adventure Log</h3>
             <p>
-              SQLite database with WAL mode storing characters, inventory, world
-              state, quests, and relationships
+              Follow the story in a focused browser table while tool disclosures
+              make meaningful state changes inspectable
             </p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">🔮</div>
-            <h3>DM Secrets</h3>
+            <div class="feature-icon">🤝</div>
+            <h3>NPCs &amp; Relationships</h3>
             <p>
-              Hidden information system with reveal conditions, leak detection,
-              and spoiler formatting for dramatic reveals
+              Meet characters the DM authors into the campaign and let
+              conversations, memories, and trust change what happens next
             </p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">🏰</div>
-            <h3>Grand Strategy</h3>
+            <div class="feature-icon">🛡️</div>
+            <h3>Rules-Backed Consequences</h3>
             <p>
-              Nation management, diplomacy, fog of war, turn-based resolution
-              for domain-level play
+              Rolls, combat, equipment, spells, and other risky actions are
+              resolved by the engine before the DM narrates the result
             </p>
           </div>
           <div class="feature-card">
@@ -269,18 +250,18 @@
           </div>
           <div class="feature-card">
             <div class="feature-icon">🔥</div>
-            <h3>Full Spellcasting</h3>
+            <h3>Combat &amp; Spellcasting</h3>
             <p>
-              15+ SRD spells, concentration tracking, slot progression, and
-              Warlock pact magic validation
+              Character abilities, equipment, conditions, spell slots, and
+              encounters stay connected to the same campaign state
             </p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">💰</div>
-            <h3>Living Economy</h3>
+            <div class="feature-icon">📚</div>
+            <h3>Open RPG MCP Backend</h3>
             <p>
-              Theft heat system, fence networks, loot tables, and currency
-              conversion mechanics
+              The browser experience is powered by an open, tool-driven RPG
+              engine that can grow with the table
             </p>
           </div>
         </div>
@@ -290,40 +271,41 @@
         <h2>// SYSTEM_ARCHITECTURE</h2>
         <div class="architecture-diagram">
           <div class="server-card">
-            <h3>🖥️ Quest Keeper AI Frontend</h3>
+            <h3>🌐 Quest Keeper AI Player Table</h3>
             <p class="server-desc">
-              Tauri desktop application with dual-pane interface
+              A focused browser experience for starting and continuing a
+              persistent solo campaign
             </p>
             <ul class="server-features">
-              <li>React 19 + TypeScript frontend</li>
-              <li>Three.js / React Three Fiber 3D battlemap</li>
-              <li>Zustand state management</li>
-              <li>Multi-LLM orchestration</li>
-              <li>Markdown chat with tool inspection</li>
-              <li>Character sheets, inventory, world state views</li>
-              <li>Real-time combat visualization</li>
-              <li>Cross-platform (Windows, macOS, Linux)</li>
+              <li>Natural-language player composer</li>
+              <li>Campaign and character setup</li>
+              <li>Readable adventure log</li>
+              <li>Character, inventory, quest, and source views</li>
+              <li>Expandable tool-call disclosures</li>
+              <li>Clerk account and persistent campaigns</li>
+              <li>Responsive browser layout</li>
+              <li>Free tier with an optional Player Pass</li>
             </ul>
             <div class="tech-stack">
-              <span class="tech-badge">Tauri 2.x</span>
-              <span class="tech-badge">React</span>
-              <span class="tech-badge">Three.js</span>
-              <span class="tech-badge">Zustand</span>
+              <span class="tech-badge">Browser</span>
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">Clerk</span>
+              <span class="tech-badge">Stripe</span>
             </div>
           </div>
 
           <div class="server-card">
             <h3>⚙️ rpg-mcp Backend</h3>
-            <p class="server-desc">Unified MCP server with 135+ tools</p>
+            <p class="server-desc">Unified RPG MCP server with authoritative tools</p>
             <ul class="server-features">
               <li>Character &amp; NPC management with D&D stats</li>
-              <li>Full Spellcasting (Slots, Concentration, SRD)</li>
+              <li>Spellcasting, inventory, and equipment state</li>
               <li>Combat encounters with initiative &amp; actions</li>
-              <li>Complex Economy (Theft, Heat, Fences)</li>
-              <li>World generation with Perlin noise</li>
-              <li>Corpse Decay &amp; Loot Tables</li>
-              <li>Grand strategy &amp; nation management</li>
-              <li>DM secrets with reveal conditions</li>
+              <li>Quests, objectives, journals, and progression</li>
+              <li>NPC memories, relationships, and agency hooks</li>
+              <li>Source-aware rules and campaign attribution</li>
+              <li>SQLite persistence with tenant boundaries</li>
+              <li>MCP-compatible service boundary</li>
             </ul>
             <div class="tech-stack">
               <span class="tech-badge">TypeScript</span>
@@ -335,10 +317,10 @@
         </div>
         <div class="integration-note">
           <p>
-            The frontend spawns rpg-mcp as a sidecar process, communicating via
-            JSON-RPC over stdio using the Model Context Protocol. The backend
-            can also run standalone with Claude Desktop, RooCode, or any
-            MCP-compatible client.
+            The hosted player table connects to the RPG MCP engine over an
+            authenticated service boundary. The backend can also run standalone
+            with an MCP-compatible client, while Quest Keeper AI keeps the
+            player-facing experience focused on the story.
           </p>
         </div>
       </section>
@@ -406,7 +388,7 @@
                   <td>Cloud only</td>
                   <td>LevelDB (local)</td>
                   <td>Cloud only</td>
-                  <td class="highlight">SQLite (local)</td>
+                  <td class="highlight">Persistent campaign state</td>
                 </tr>
                 <tr>
                   <td><strong>API Access</strong></td>
@@ -414,7 +396,7 @@
                   <td>Pro tier only</td>
                   <td>Full JavaScript API</td>
                   <td>❌ None (7yr wait)</td>
-                  <td class="highlight">135+ MCP tools</td>
+                  <td class="highlight">Tool-driven RPG engine</td>
                 </tr>
                 <tr>
                   <td><strong>Self-Hosted</strong></td>
@@ -433,12 +415,12 @@
                   <td class="highlight">✅ MIT</td>
                 </tr>
                 <tr>
-                  <td><strong>3D Battlemap</strong></td>
-                  <td>❌</td>
+                  <td><strong>Conversational DM</strong></td>
+                  <td>✅</td>
                   <td>❌</td>
                   <td>Via modules</td>
-                  <td>❌ (Sigil cancelled)</td>
-                  <td class="highlight">✅ Three.js</td>
+                  <td>❌</td>
+                  <td class="highlight">✅ Core experience</td>
                 </tr>
                 <tr>
                   <td><strong>Pricing</strong></td>
@@ -446,7 +428,7 @@
                   <td>Free–$11/mo</td>
                   <td>$50 one-time</td>
                   <td>Free–$6/mo + books</td>
-                  <td class="highlight">Free forever</td>
+                  <td class="highlight">Free tier + Player Pass</td>
                 </tr>
               </tbody>
             </table>
@@ -474,16 +456,16 @@
                     all D&D notation (advantage, exploding, drop lowest)
                   </li>
                   <li>
-                    <strong>Visual feedback:</strong> 3D battlemap, character
-                    sheets, inventory UI
+                    <strong>Readable play surface:</strong> Character sheets,
+                    inventory, quests, and a focused campaign log
                   </li>
                   <li>
                     <strong>Self-hosted:</strong> Your data stays on your
                     machine
                   </li>
                   <li>
-                    <strong>Free &amp; open source:</strong> No $50/month Mythic
-                    tier needed
+                    <strong>Flexible access:</strong> Start free, then choose a
+                    Player Pass when you want more room for a persistent table
                   </li>
                 </ul>
               </div>
@@ -530,20 +512,20 @@
                     banned AI content
                   </li>
                   <li>
-                    <strong>Full API access:</strong> 135+ tools vs Roll20's
-                    Pro-tier-only API with no HTTP requests
+                    <strong>Tool-driven engine:</strong> An open RPG backend
+                    keeps state authoritative behind the player table
                   </li>
                   <li>
-                    <strong>Data ownership:</strong> SQLite on your machine vs
-                    cloud-only storage
+                    <strong>Campaign continuity:</strong> Player choices and
+                    authored world state remain part of the same record
                   </li>
                   <li>
-                    <strong>World generation:</strong> Procedural terrain, not
-                    just map uploads
+                    <strong>Readable campaign log:</strong> The table keeps the
+                    important story and rules results together
                   </li>
                   <li>
-                    <strong>No subscription:</strong> Free forever vs $11/month
-                    for advanced features
+                    <strong>Clear tiers:</strong> A free tier plus an optional
+                    Player Pass for continued play
                   </li>
                 </ul>
               </div>
@@ -559,8 +541,8 @@
                     Call of Cthulhu modules
                   </li>
                   <li>
-                    <strong>Zero install:</strong> Browser-based, no desktop app
-                    needed
+                    <strong>Browser access:</strong> Works immediately without a
+                    separate client
                   </li>
                   <li>
                     <strong>800+ character sheets:</strong> Community-built for
@@ -597,10 +579,11 @@
                     <strong>Open source:</strong> MIT licensed vs proprietary
                   </li>
                   <li>
-                    <strong>Built-in 3D:</strong> Three.js included vs
-                    module-dependent
+                    <strong>Focused table:</strong> A simpler player surface
+                    instead of a general-purpose VTT workspace
                   </li>
-                  <li><strong>Free:</strong> No $50 license required</li>
+                  <li><strong>Open foundation:</strong> The RPG MCP backend is
+                    available for inspection and extension</li>
                 </ul>
               </div>
               <div class="disadvantages">
@@ -650,8 +633,8 @@
                     don't own your books"
                   </li>
                   <li>
-                    <strong>3D battlemap:</strong> D&D Beyond cancelled their 3D
-                    Sigil VTT
+                    <strong>Conversational play:</strong> A DM that responds to
+                    the player instead of only managing a character sheet
                   </li>
                   <li>
                     <strong>API access:</strong> 135+ MCP tools vs API promised
@@ -739,10 +722,10 @@
             <p class="phase-duration">Unified backend, working integration</p>
             <ul class="phase-deliverables">
               <li>✅ Unified rpg-mcp server (135+ tools)</li>
-              <li>✅ Tauri frontend with React + Three.js</li>
+              <li>✅ Browser player table with a readable campaign log</li>
               <li>✅ Character, inventory, combat systems</li>
               <li>✅ Quest system with objectives</li>
-              <li>✅ World generation with regions</li>
+              <li>✅ Persistent campaign, character, and quest state</li>
               <li>✅ Multi-LLM support</li>
               <li>✅ SQLite persistence with WAL mode</li>
             </ul>
@@ -756,7 +739,7 @@
             <p class="phase-duration">Current development focus</p>
             <ul class="phase-deliverables">
               <li>✅ DM Secrets system with reveal conditions</li>
-              <li>✅ Grand strategy &amp; nation management</li>
+              <li>⏳ Maps, procedural worlds, and domain-scale strategy are later work</li>
               <li>✅ Turn-based resolution system</li>
               <li>✅ Full Spellcasting Engine</li>
               <li>✅ Theft &amp; Fence Economy</li>
@@ -843,10 +826,10 @@
           <div class="doc-card">
             <h3>🚀 Quick Start Guide</h3>
             <p>
-              Get started with Quest Keeper AI—both the desktop app and
-              standalone MCP backend
+              Play Quest Keeper AI in the browser, or explore the standalone
+              RPG MCP backend
             </p>
-            <a href="/quickstart" class="doc-link">Get Started →</a>
+            <a href="https://play.questkeeperai.com/" class="doc-link">Play Now →</a>
           </div>
           <div class="doc-card">
             <h3>🎨 Design System</h3>

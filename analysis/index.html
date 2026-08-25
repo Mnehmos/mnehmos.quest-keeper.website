@@ -261,7 +261,7 @@
                 <a href="/">Home</a>
                 <a href="/analysis" class="active">Analysis</a>
                 <a href="/roadmap">Roadmap</a>
-                <a href="/quickstart">Quick Start</a>
+                <a href="/quickstart">Play Guide</a>
                 <a href="/api-reference">API Reference</a>
                 <a href="/style-guide">Style Guide</a>
             </div>
@@ -357,7 +357,7 @@
 │   ├── src/
 │   │   ├── index.ts          # Main combat server
 │   │   ├── dice.ts           # Dice rolling utilities
-│   │   ├── spatial-engine.ts # 3D battlefield system
+│   │   ├── encounter-engine.ts # Rules-backed encounter system
 │   │   └── action-types.ts   # Action economy definitions
 │   └── dist/                 # Compiled JavaScript
 └── dungeon-master-mode.json   # Roo Code AI mode configuration</pre>
@@ -442,12 +442,12 @@
 
             <ul class="feature-list">
                 <li>Dice Rolling - All D&D dice mechanics</li>
-                <li>Spatial Combat - 3D battlefield with terrain</li>
-                <li>Line of Sight - Vision and cover calculations</li>
-                <li>Movement - Speed-based movement with opportunity attacks</li>
+                <li>Encounter Resolution - Rules-backed combat actions</li>
+                <li>Checks - Ability, skill, and social resolution</li>
+                <li>Movement - State-aware travel and room transitions</li>
                 <li>Action Economy - Actions, reactions, legendary actions</li>
-                <li>Area Effects - Spell geometry and targeting</li>
-                <li>Tactical Analysis - AI-friendly battlefield descriptions</li>
+                <li>Spell Effects - Slots, conditions, and targeting</li>
+                <li>State Projection - AI-friendly campaign descriptions</li>
                 <li>Combat Logging - Action history tracking</li>
                 <li>Batch Operations - Multiple rolls and actions</li>
             </ul>
@@ -461,17 +461,16 @@ roll_dice({ notation: "3d6" })              // Multiple dice
 roll_dice({ notation: "8d6" })              // Fireball damage</pre>
             </div>
 
-            <h3>3D Spatial Engine</h3>
+            <h3>Rules-Backed Encounters</h3>
             <div class="highlight-box">
-                <h4>Beyond Grid-Based Combat</h4>
-                <p>The system features a full 3D battlefield with:</p>
+                <h4>Beyond Prose-Only Play</h4>
+                <p>The launch engine records encounter consequences before the DM narrates them:</p>
                 <ul>
-                    <li>Elevation (Z-axis) tracking</li>
-                    <li>Height advantage calculations</li>
-                    <li>Terrain features (walls, pillars, stairs, pits, etc.)</li>
-                    <li>Line of sight with 3D raycasting</li>
-                    <li>Cover mechanics (half, three-quarters, total)</li>
-                    <li>Movement validation with obstacle detection</li>
+                    <li>Initiative and legal combat actions</li>
+                    <li>Attack, damage, healing, and condition results</li>
+                    <li>Equipment and spell-slot changes</li>
+                    <li>Travel and authored location state</li>
+                    <li>Quest and relationship consequences</li>
                 </ul>
             </div>
 
@@ -486,7 +485,7 @@ roll_dice({ notation: "8d6" })              // Fireball damage</pre>
             </ul>
 
             <h3>Tactical Intelligence</h3>
-            <p>Human-readable battlefield descriptions for AI decision-making, including:</p>
+            <p>Human-readable campaign state for DM decision-making, including:</p>
             <ul class="feature-list">
                 <li>Enemy positions and distances</li>
                 <li>Cover availability</li>
@@ -633,7 +632,7 @@ roll_dice({ notation: "8d6" })              // Fireball damage</pre>
                 </div>
                 <div class="stat-card">
                     <div class="number">✓</div>
-                    <div class="label">3D Spatial Combat</div>
+                    <div class="label">Rules-Backed Encounters</div>
                 </div>
                 <div class="stat-card">
                     <div class="number">✓</div>
@@ -644,7 +643,7 @@ roll_dice({ notation: "8d6" })              // Fireball damage</pre>
             <h3>Key Innovations</h3>
             <ul class="feature-list">
                 <li>First system to bridge LLM AI assistants and traditional tabletop RPG mechanics</li>
-                <li>Comprehensive 3D spatial combat beyond traditional 2D grids</li>
+                <li>Conversation-first play with persistent campaign state</li>
                 <li>Sophisticated stronghold management for high-level play</li>
                 <li>Rich ASCII visualization for text-based environments</li>
                 <li>Intelligent world state merging to prevent data loss</li>
@@ -657,7 +656,7 @@ roll_dice({ notation: "8d6" })              // Fireball damage</pre>
 
             <h3>Current Limitations</h3>
             <ul class="feature-list">
-                <li>Visual Fidelity (3D vs AAA Graphics)</li>
+                <li>Maps and tactical presentation are intentionally deferred</li>
                 <li>Manual stat management required</li>
                 <li>Limited automation for conditions and duration tracking</li>
                 <li>Single-character world state (not ideal for shared parties)</li>
@@ -711,7 +710,7 @@ roll_dice({ notation: "8d6" })              // Fireball damage</pre>
                     <td>❌ None</td>
                 </tr>
                 <tr>
-                    <td>3D Spatial Combat</td>
+                    <td>Rules-Backed Encounters</td>
                     <td>✅ Yes</td>
                     <td>❌ No</td>
                 </tr>
@@ -727,7 +726,7 @@ roll_dice({ notation: "8d6" })              // Fireball damage</pre>
                 </tr>
                 <tr>
                     <td>Visual Polish</td>
-                    <td>✅ 3D WebGL</td>
+                    <td>✅ Focused browser table</td>
                     <td>✅ High</td>
                 </tr>
             </table>
@@ -750,8 +749,8 @@ roll_dice({ notation: "8d6" })              // Fireball damage</pre>
                     <td>⚠️ Limited</td>
                 </tr>
                 <tr>
-                    <td>Visual Maps</td>
-                    <td>✅ Three.js</td>
+                    <td>Readable campaign log</td>
+                    <td>✅ Browser table</td>
                     <td>✅ Full graphics</td>
                 </tr>
                 <tr>
@@ -799,13 +798,13 @@ roll_dice({ notation: "8d6" })              // Fireball damage</pre>
                 <li>~10,150 lines of TypeScript</li>
                 <li>100+ MCP tools across both servers</li>
                 <li>15+ database tables with relational integrity</li>
-                <li>3D spatial engine with line-of-sight calculations</li>
+                <li>Encounter engine with committed consequences</li>
                 <li>Complete D&D 5e rule implementation</li>
             </ul>
 
             <h3>Innovation</h3>
             <div class="highlight-box">
-                <p><strong>First-of-its-Kind:</strong> To our knowledge, this is the only system that combines full D&D 5e mechanical accuracy, MCP protocol for AI integration, 3D spatial combat, stronghold management, comprehensive spell system, and persistent state management—all in a free, open-source package designed specifically for LLM-powered gameplay.</p>
+                <p><strong>Launch focus:</strong> Quest Keeper AI combines conversation-first DM play, D&D rules, MCP tool use, and persistent campaign state in a focused browser table. Maps, procedural worlds, and domain-scale strategy remain later roadmap work.</p>
             </div>
 
             <h3>Perfect For</h3>
