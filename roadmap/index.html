@@ -316,7 +316,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/analysis">Analysis</a></li>
                 <li><a href="/roadmap">Roadmap</a></li>
-                <li><a href="/quickstart">Quick Start</a></li>
+                <li><a href="/quickstart">Play Guide</a></li>
                 <li><a href="/api-reference">API Reference</a></li>
                 <li><a href="/style-guide">Style Guide</a></li>
             </ul>
@@ -368,14 +368,14 @@
                     
                     <div class="vision-box">
                         <h3>Quest Keeper AI</h3>
-                        <p>An AI Dungeon Master meets Visual Game Engine—where every action has mechanical weight, every quest tracks progress, and your world persists across sessions.</p>
+                        <p>An AI Dungeon Master meets a persistent rules engine—where every action has mechanical weight, every quest tracks progress, and your campaign persists across sessions.</p>
                     </div>
 
                     <div class="highlight-box">
                         <h3>Strategic Pillars</h3>
                         <ul>
                             <li><strong>🔴 Mechanical Depth</strong> - Rich, trackable game systems (quests, skills, items)</li>
-                            <li><strong>🟠 Visual Feedback</strong> - Maps, battlemaps, character sheets that reflect state</li>
+                            <li><strong>🟠 Readable Play</strong> - A focused browser table, campaign log, and character views that reflect state</li>
                             <li><strong>🟠 AI Integration</strong> - LLM DM with proper tools to manipulate world</li>
                             <li><strong>🟡 Session Continuity</strong> - Save, load, condense, resume anywhere</li>
                             <li><strong>🟢 Multiplayer Foundation</strong> - Session IDs, multi-character support</li>
@@ -383,7 +383,7 @@
                     </div>
 
                     <h3>The Key Innovation</h3>
-                    <p>The AI describes the world; the engine defines it. LLMs never lie about your HP, inventory, or quest progress because all state comes from a verified SQLite database—not hallucination.</p>
+                        <p>The DM describes the world; the engine records authoritative state. That separation keeps HP, inventory, and quest progress grounded in the campaign record rather than in prose alone.</p>
                 </section>
 
                 <section id="phase-1" class="content-section">
@@ -393,17 +393,16 @@
                             <span class="phase-status complete">✅ Complete</span>
                         </div>
 
-                        <p>Unified backend, working frontend integration, all core systems operational.</p>
+                        <p>Unified backend, working browser integration, and the core systems needed for a persistent solo table.</p>
 
                         <ul class="deliverables">
                             <li class="done">Unified rpg-mcp server (80+ MCP tools)</li>
-                            <li class="done">Tauri desktop app with React frontend</li>
-                            <li class="done">Three.js 3D battlemap visualization</li>
+                            <li class="done">Browser player table with a readable campaign log</li>
                             <li class="done">Character creation with D&D 5e stats</li>
                             <li class="done">Inventory system with equipment slots &amp; consumables</li>
                             <li class="done">Combat encounters with initiative &amp; actions</li>
                             <li class="done">Quest system with objectives &amp; rewards</li>
-                            <li class="done">Procedural world generation (Perlin noise)</li>
+                            <li class="pending">Maps and procedural world generation (deferred)</li>
                             <li class="done">Multi-LLM support (Claude, GPT, Gemini, OpenRouter)</li>
                             <li class="done">SQLite persistence with WAL mode</li>
                             <li class="done">Bundled database with LOTR content</li>
@@ -418,15 +417,14 @@
                             <span class="phase-status in-progress">🔄 In Progress</span>
                         </div>
 
-                        <p>DM secrets, grand strategy, and spatial combat enhancements.</p>
+                        <p>DM secrets, NPC continuity, spellcasting, and rules-backed social and combat play.</p>
 
                         <ul class="deliverables">
                             <li class="done">DM Secrets system with reveal conditions</li>
                             <li class="done">Leak detection for secret information</li>
                             <li class="done">Spoiler formatting for dramatic reveals</li>
-                            <li class="done">Grand strategy nation management</li>
-                            <li class="done">Turn-based resolution with fog of war</li>
-                            <li class="done">Diplomatic actions (alliances, claims)</li>
+                            <li class="pending">Domain-scale strategy and nation management (deferred)</li>
+                            <li class="pending">World map visualization and tactical battlemaps (deferred)</li>
                             <li class="done">Full Spellcasting Engine (Slots, Concentration)</li>
                             <li class="done">Theft &amp; Fence Economy (Heat system)</li>
                             <li class="done">Corpse Decay &amp; Loot Tables</li>
@@ -434,8 +432,7 @@
                             <li class="done">Improvisation Engine (Rule of Cool)</li>
                             <li class="done">Spatial Navigation (Room Networks)</li>
                             <li class="pending">Spatial combat with grid positions</li>
-                            <li class="pending">World map visualization (2D tile view)</li>
-                            <li class="pending">POI system for locations</li>
+                            <li class="pending">POI and map workflows (later roadmap)</li>
                         </ul>
                     </div>
                 </section>
@@ -475,13 +472,13 @@
                             <span class="phase-status upcoming">📋 Upcoming</span>
                         </div>
 
-                        <p>Tactical, spatial, visual combat system.</p>
+                        <p>Future tactical presentation layer; launch play stays focused on conversational, rules-backed encounters.</p>
 
                         <ul class="deliverables">
                             <li class="upcoming">Grid-based positioning (X/Y coordinates)</li>
                             <li class="upcoming">Movement costs by terrain type</li>
                             <li class="upcoming">Opportunity attack detection</li>
-                            <li class="upcoming">Click-to-select tokens on battlemap</li>
+                            <li class="upcoming">Click-to-select tokens (later roadmap)</li>
                             <li class="upcoming">Drag-to-move token interaction</li>
                             <li class="upcoming">Context menu for combat actions</li>
                             <li class="upcoming">Area effect visualization (fireball, etc.)</li>
@@ -505,7 +502,7 @@
                             <li class="done">Session save/load tools</li>
                             <li class="done">Session management UI</li>
                             <li class="done">Campaign setup wizard</li>
-                            <li class="done">World generation modal</li>
+                            <li class="pending">Procedural world generation modal (deferred)</li>
                             <li class="upcoming">Multiple save slots</li>
                             <li class="upcoming">Auto-save on state changes</li>
                             <li class="upcoming">Context condensing for LLM limits</li>

@@ -12,7 +12,7 @@
 
 ## Overview
 
-Quest Keeper AI Website is a static documentation and marketing site for the Quest Keeper AI project - an AI-powered tabletop RPG platform. The website provides comprehensive documentation including quick start guides, API references, system analysis, roadmaps, and showcases for the desktop application and MCP backend server. It features a retro-futuristic cyberpunk design aesthetic with glassmorphism effects, neon colors, and scanline overlays.
+Quest Keeper AI Website is a static documentation and marketing site for the Quest Keeper AI project - a browser-first tabletop RPG platform. The website provides a player guide, API reference, system analysis, roadmap, and session showcase for the browser table and RPG MCP backend. It features a retro-futuristic cyberpunk design aesthetic with glassmorphism effects, neon colors, and scanline overlays.
 
 ## Architecture
 
@@ -26,7 +26,7 @@ The website is a static HTML/CSS site with no build process or JavaScript depend
 |-----------|---------|----------|
 | Landing Page | Main entry point, feature showcase, call-to-action | `index.html` |
 | Global Styles | Unified design system with cyberpunk theme | `styles.css` |
-| Quick Start Guide | Setup instructions for desktop app and MCP backend | `quickstart/index.html` |
+| Player Guide | Browser play instructions and backend orientation | `quickstart/index.html` |
 | API Reference | Documentation for 135+ MCP tools | `api-reference/index.html` |
 | System Analysis | Architecture deep dive and technical details | `analysis/index.html` |
 | Roadmap | Project phases and feature development timeline | `roadmap/index.html` |
@@ -57,7 +57,7 @@ This is a static website with no programmatic API. The site serves as documentat
 #### External Links
 - **GitHub Repositories**: Links to [QuestKeeperAI-v2](https://github.com/Mnehmos/QuestKeeperAI-v2) and [rpg-mcp](https://github.com/Mnehmos/rpg-mcp)
 - **MCP Protocol**: Reference to [modelcontextprotocol.io](https://modelcontextprotocol.io)
-- **Third-party Tools**: Claude Desktop, KiloCode, RooCode integration instructions
+- **Player Surface**: Browser-first campaign and character workflow
 
 ### Configuration
 
@@ -120,8 +120,7 @@ External resources loaded via CDN:
 
 | Project | Integration Type | Description |
 |---------|-----------------|-------------|
-| [mnehmos.quest-keeper.game](https://github.com/Mnehmos/QuestKeeperAI-v2) | Documentation | Website documents the desktop Tauri application |
-| [mnehmos.rpg.mcp](https://github.com/Mnehmos/rpg-mcp) | Documentation | Website provides API reference for MCP backend server |
+| [mnehmos.rpg.mcp](https://github.com/Mnehmos/mnehmos.rpg.mcp) | Backend | Website documents the RPG MCP service used by the browser table |
 
 ### External Services
 
@@ -229,7 +228,7 @@ mnehmos.quest-keeper.website/
 ├── changelog/
 │   └── index.html                # Version history and updates
 ├── quickstart/
-│   └── index.html                # Setup guide for desktop app and MCP backend
+│   └── index.html                # Browser player guide and backend orientation
 ├── roadmap/
 │   └── index.html                # Development phases and feature timeline
 ├── showcase/
